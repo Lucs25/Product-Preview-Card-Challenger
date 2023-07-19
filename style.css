@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(158, 36%, 37%);
+  --secondary-color: hsl(30, 38%, 92%);
+  --neutral-primary-color: hsl(0, 0%, 100%);
+  --neutral-secondary-color: hsl(228, 12%, 48%);
+  --neutral-third-color: hsl(212, 21%, 14%);
+  --first-font: "Montserrat";
+  --secondary-font: "Fraunces";
+  --margin-right: 30px;
+}
+
+body {
+  background: var(--secondary-color);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  margin: 10px auto;
+  display: flex;
+  width: 600px;
+}
+
+@media (max-width: 610px) {
+/*   body {
+    flex-direction: column;
+  } */
+  main {
+    flex-direction: column;
+  }
+}
+
+img {
+  border-radius: 8px 0 0 8px;
+  display: block;
+  max-width: 100%;
+}
+
+.content {
+  padding-left: 20px;
+  background: var(--neutral-primary-color);
+  border-radius: 0px 8px 8px 0px;
+  max-width: 50%;
+}
+
+.content > p {
+  margin: 20px 0;
+}
+
+.content p:first-child {
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  line-height: 1;
+}
+
+p {
+  font-size: 0.875rem;
+  color: var(--neutral-secondary-color);
+  font-family: var(--first-font), sans-serif;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.product-info {
+  line-height: 1.5;
+}
+
+.price {
+  display: flex;
+  padding: 20px 0;
+  margin-right: var(--margin-right);
+  align-items: center;
+}
+
+.price span:nth-child(1) {
+  margin-right: var(--margin-right);
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.price span:nth-child(2) {
+  font-family: var(--first-font);
+  color: var(--neutral-secondary-color);
+}
+
+.btn-info {
+  display: flex;
+  margin-right: 10px;
+  color: black;
+}
+
+.btn {
+  padding: 15px 20px;
+  color: var(--neutral-primary-color);
+  background: var(--primary-color);
+  border-radius: 8px;
+  width: 90%;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: hsl(158, 43%, 20%);
+  transition: 1s;
+}
+.btn img {
+  display: inline;
+  margin-right: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
