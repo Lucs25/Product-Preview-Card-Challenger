@@ -1,7 +1,7 @@
 # Frontend Mentor - Product preview card component
 
-- [Frontend Mentor - Product preview card component solution](#frontend-mentor---product-preview-card-component-solution)
-  - [Visão Geral](#visão-geral)
+- [Desafio Frontend Mentor - Solução Product preview card component ](#frontend-mentor---product-preview-card-component-solution)
+    - [Visão Geral](#visão-geral)
     - [Desafio](#desafio)
     - [Screenshot](#screenshot)
     - [Links](#links)
@@ -21,9 +21,13 @@ Os usuários devem ser capazes de:
 - Visualizar o layout ideal dependendo do tamanho da tela do dispositivo deles
 - Ver os estados de "hover" e "focus" para elementos interativos
 
-### Screenshot
+# Screenshot
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg) 
+### Desktop
+![Design preview for the Product preview card component coding challenge](./design/desktop-design.jpg) 
+
+### Mobile
+![Design preview for the Product preview card component coding challenge](./design/mobile-design.jpg) 
 
 ### Links
 - Solução URL: [Repo](https://github.com/Lucs25/Product-Preview-Card-Challenger)
