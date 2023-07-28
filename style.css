@@ -16,7 +16,6 @@
   --neutral-third-color: hsl(212, 21%, 14%);
   --first-font: "Montserrat", sans-serif;
   --secondary-font: "Fraunces", sans-serif;
-  --margin-right: 30px;
 }
 
 body {
@@ -24,30 +23,25 @@ body {
 }
 
 main {
-  margin: 10px auto; /* alterado */
-  display: flex;
-  max-width: 600px;
+  margin: 10px; /* alterado */
 }
 
-picture {
-  max-width: 50%;
-}
-
-img {
-  border-radius: 8px 0 0 8px;
+source,
+img,
+picture,
+svg {
   display: block;
   max-width: 100%;
 }
 
-.content {
-  padding: 0px 0px 10px 20px;
-  background: var(--neutral-primary-color);
-  border-radius: 0px 8px 8px 0px;
-  max-width: 50%;
+img {
+  border-radius: 8px 8px 0 0;
 }
 
-.content > p {
-  margin: 20px 0;
+.content {
+  background: var(--neutral-primary-color);
+  border-radius: 0px 0px 8px 8px;
+  padding: 10px 20px;
 }
 
 .content p:first-child {
@@ -56,8 +50,8 @@ img {
 
 h1 {
   font-family: var(--secondary-font);
-  width: 80%;
   line-height: 1;
+  margin: 10px 0px;
 }
 
 p {
@@ -65,7 +59,8 @@ p {
   color: var(--neutral-secondary-color);
   font-family: var(--first-font);
   line-height: 2;
-  width: 80%;
+  padding-right: 15px;
+  margin: 15px 0px;
 }
 
 .product-info {
@@ -75,12 +70,10 @@ p {
 .price {
   display: flex;
   padding-bottom: 20px;
-  margin-right: var(--margin-right);
   align-items: center;
 }
 
 .price span:nth-child(1) {
-  margin-right: var(--margin-right);
   color: var(--primary-color);
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -90,24 +83,23 @@ p {
 .price span:nth-child(2) {
   font-family: var(--first-font);
   color: var(--neutral-secondary-color);
+  padding-left: 20px;
   text-decoration: line-through;
 }
 
-.btn-info {
-  display: flex;
-  margin-right: 10px;
-  color: black;
-}
-
 .btn {
-  padding: 15px 20px;
+  padding: 10px 0px;
   color: var(--neutral-primary-color);
   background: var(--primary-color);
   border-radius: 8px;
-  width: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .btn:hover {
@@ -115,9 +107,7 @@ p {
   transition: 1s;
 }
 .btn img {
-  display: inline;
   margin-right: 10px;
-  text-align: center;
   width: 20px;
   height: 20px;
 }
@@ -130,25 +120,26 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 620px) {
+@media (min-width: 600px) {
   main {
-    flex-direction: column;
-    align-items: center;
-  }
-  img {
-    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: center;
   }
 
   .content {
-    border-radius: 0px 0px 8px 8px;
+    max-width: 300px;
+    border-radius: 0 8px 8px 0;
   }
 
-  h1 {
-    font-size: 1.5rem;
+  picture {
+    max-width: 300px;
   }
 
-  p {
-    width: 90%;
-    margin-top: 10px;
+  img {
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .content p:first-child {
+    margin-top: 50px;
   }
 }
